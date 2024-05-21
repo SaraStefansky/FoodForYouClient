@@ -1,0 +1,118 @@
+.containerStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px 25px;
+    display: flex; /* כל האלמנטים בקונטיינר יוצגו ב- Flex */
+    /* align-items: center; האלמנטים יישורו באמצע */
+    justify-content: center; 
+/* .    min-height: 100vh; הגובה המינימלי של הקונטיינר יהיה 100% מגובה המסך */
+}
+
+.center {
+    display: flex;
+    justify-content: center; /* מיישר למרכז אופקית */
+    align-items: center; /* מיישר למרכז אנכית */
+    /* height: 100vh; כדי למלא את כל החלון */
+    flex-direction: column; /* מיישר את התוכן במרכז אנכית */
+}
+
+  
+.textStyle {
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.button-style{
+    background-color: #00bfaa;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: inline-block; 
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+  
+
+  }
+  
+
+.text-field {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.opacity-ul{
+    opacity: 1 !important;
+}
+
+.noOpacity-ul {
+    opacity: 0 !important;
+}
+/* סגנון לדף המכיל את הדיב */
+body {
+    font-family: 'Arial', sans-serif; /* גופן דף */
+    background-color: #f0f0f0; /* צבע רקע */
+    color: #333; /* צבע טקסט */
+  }
+  
+  /* סגנון לדיב */
+  .div-style {
+    color: black; /* צבע טקסט */
+    border: 2px solid black; /* מסגרת שחורה */
+    border-radius: 10px; /* כדי לעגל את הקצוות */
+    padding: 10px 20px; /* ריווח פנימי בדיב */
+    margin: 20px; /* ריווח חיצוני של הדיב */
+    cursor: pointer; /* סמל עכבר יהיה כמו אצבע מעוגלת */
+    text-align: center; /* מרכוז טקסט באמצעות טקסט אך ורק יישום של טקסט */
+    font-weight: bold; /* גוף טקסט מודגש */
+  }
+  
+
+  .dropdownStyle {
+    position: absolute;
+    /* top: 0; */
+    /* right: 0; */
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding-inline-start: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+}
+.like-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none; /* Remove blue outline */
+}
+
+.like-button:focus {
+    outline: none; /* Remove blue outline */
+}
